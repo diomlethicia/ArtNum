@@ -95,18 +95,35 @@ input{
 
 }
 .accueilBody1{
-    background-image: url("picture1.jpeg");
-    background-repeat: no-repeat;
-    display: block;
-    background-size: cover;
+    
+    position: relative;
+    display: flex;
+    
     margin-top: 5%;
     margin-bottom: 7%;
     padding: 150px;
     font-size: 20px;
     font-weight: lighter;
     border-radius: 5px;
-    opacity: 0.4;
+    
     text-align: center;
+}
+.bgimg{
+    background-image: url("picture1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    opacity: 0.4;
+    width: 100%;
+}
+.bgimgtext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    
 }
 #buttonaccueil{
     display: block;
