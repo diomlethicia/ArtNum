@@ -48,7 +48,8 @@ a{
     padding-right: 5%;
     gap: 3%;
 }
-#picture1{
+.picture1{
+
     width: 40%;
     margin-right: 50px;
     border-radius: 15px;
@@ -94,21 +95,48 @@ input{
     text-align: center;
 
 }
+
+
 .accueilBody1{
-    background-image: url("picture1.jpeg");
-    background-repeat: no-repeat;
-    display: block;
-    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 400px;
     margin-top: 5%;
     margin-bottom: 7%;
-    padding: 150px;
+    padding: auto;
     font-size: 20px;
     font-weight: lighter;
     border-radius: 5px;
-    opacity: 0.4;
     text-align: center;
 }
+.accimg{
+    width: 100%;
+    height: 100%;
+    
+}
+.accimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+.acctext{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
 
+}
 #buttonaccueil{
     display: block;
     margin: 0 auto; 
@@ -120,7 +148,6 @@ input{
     padding: 14px;
 
 }
-
 .leftText{
     display: block;
     float: left;
@@ -135,13 +162,29 @@ input{
 .block1{
     display: flex;
     gap: 5%;
+    margin-top: 5%;
 }
 .bl1-1{
     background-color: white;
     padding: 10px;
     border-radius: 5px;
-    margin: 10px;
+    margin: 4%;
     text-align: left;
+ 
+}
+.round{
+    border-radius: 100%;
+    padding: 15px;
+    height: 7px;
+    text-align: center;
+    background-color: blue;
+    
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1%;
+    gap: 2%;
 }
 .accBody2{
     display: flex;
@@ -159,7 +202,7 @@ input{
     display: block;
     width: 100%;
     height: 120px;       
-    object-fit: cover;  
+    object-fit: cover;
     object-position: center;
     border-radius: 6px 6px 0 0; 
 }
@@ -177,6 +220,9 @@ h5{
     text-align: center;
     margin-top: 7%;
 }
+.cen{
+    text-align: center;
+}
 #button2accueil{
     margin-top: 1%;
     margin-bottom: 1%;
@@ -186,8 +232,8 @@ h5{
     color: white;
     font-size: 16px;
     font-weight: bold;
-    padding: 15px;
-    width: 200px;
+    padding: 12px;
+    width: 30%;
 
 }
 textarea{
@@ -195,14 +241,38 @@ textarea{
     margin-bottom: 15px;
     padding: 10px;
     width: 100%;
-    height: 130px;
+    height: 10vh;
     border-radius: 4px;
     border: 2px solid rgb(231, 232, 233);
 }
 textarea:placeholder-shown{
     color: rgb(241, 242, 244);
 }
+.p{
+    color: rgb(141, 136, 136);
+}
 
-.acctext{
-    
+footer{
+    display: flex;
+    flex-direction: row;
+    bottom: 0%;
+    width: 100%;
+  
+    padding: 15px;
+    background-color: #33ccff;
+}
+.Allicons{
+    display: flex;
+    flex-direction: row;
+    gap: 25%;
+}
+.icon{
+    height: 25px;
+    width: 25px;
+}
+
+@media screen and (max-width: 600px){
+    .inscriptionBody img{
+        display: none;
+    }
 }
